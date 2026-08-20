@@ -1,0 +1,4 @@
+#!/bin/bash
+cc=/opt/homebrew/bin/gcc-15
+$cc -std=c23 -I./libs main.c src/*.c -o main
+
