@@ -1,4 +1,5 @@
 #include<vector.h>
+#include<stdint.h>
 #define int32 "int"
 #define int64 "long long"
 #define float32 "float"
@@ -22,6 +23,7 @@ typedef double f64;
 
 #define push_back(obj,val) _Generic((val), \
 int:i32_push_back, \
+long long:i64_push_back, \
 float:f32_push_back, \
 double:f64_push_back)(obj,val)
 
